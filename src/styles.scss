@@ -1,1 +1,15 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+fa-icon {
+  padding-right: .3rem;
+}
+
+.btn-red {
+  margin-top: 1rem;
+  background-color: #272727;
+  color: #fff;
+  &:hover {
+    background-color: #D73434;
+    color: #fff;
+  }
+}

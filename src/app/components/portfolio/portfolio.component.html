@@ -1,0 +1,71 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Portfolio example</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quaerat autem repellendus!</p>
+    <p>
+      <a routerLink="/a-propos" class="btn btn-red">À propos</a>
+    </p>
+  </div>
+</section>
+<div class="portfolio">
+  <div class="container">
+    <div class="row">
+      <!-- todo: new component -->
+      <div class="col-md-4">
+        <div class="card box-shadow">
+          <img class="card-img-top" [src]="'assets/img/portfolio-1.jpg'" alt="Ordinateur portable">
+          <div class="card-body">
+            <h3 class="card-subtitle">Title</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nesciunt? Animi mollitia deleniti aut id consectetur?</p>
+            <span class="text-muted">Categories</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn group">
+                <button type="button" class="btn btn-sm">Voir</button>
+                <button type="button" class="btn btn-sm">Modifier</button>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card box-shadow">
+          <img class="card-img-top" [src]="'assets/img/portfolio-2.jpg'" alt="Nuancier de couleurs">
+          <div class="card-body">
+            <h3 class="card-subtitle">Title</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi fugit incidunt obcaecati ipsam expedita necessitatibus assumenda?</p>
+            <span class="text-muted">Categories</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn group">
+                <button type="button" class="btn btn-sm">Voir</button>
+                <button type="button" class="btn btn-sm">Modifier</button>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card box-shadow">
+          <img class="card-img-top" [src]="'assets/img/portfolio-3.jpg'" alt="Croquis de wireframe">
+          <div class="card-body">
+            <h3 class="card-subtitle">Title</h3>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis aut distinctio dolorum dolor sit amet distinctio.</p>
+            <span class="text-muted">Categories</span>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn group">
+                <button type="button" class="btn btn-sm">Voir</button>
+                <button type="button" class="btn btn-sm">Modifier</button>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

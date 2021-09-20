@@ -1,0 +1,41 @@
+.jumbotron {
+  background-color: #f7f7f7;
+  padding: 3rem;
+  color: #272727;
+}
+
+.portfolio {
+  background-color: #f1f1f1;
+  padding: 2.5rem 4rem 4rem;
+}
+
+div.card.box-shadow {
+  margin-top: 1.5rem;
+}
+
+img {
+  height: 225px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+span.text-muted {
+  margin-bottom: 1rem;
+  font-size: smaller;
+}
+
+.btn.group {
+  padding: 1rem 0;
+}
+
+.portfolio .btn-sm {
+  border-color: #272727;
+  color: #272727;
+  margin-right: 1rem;
+  &:hover {
+    border-color: transparent;
+    background-color: #272727;
+    color: #fff;
+  }
+}
