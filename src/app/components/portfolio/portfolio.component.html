@@ -7,63 +7,26 @@
     </p>
   </div>
 </section>
-<div class="portfolio">
+<div *ngIf="projects.length > 0" class="portfolio">
   <div class="container">
     <div class="row">
-      <!-- todo: new component -->
-      <div class="col-md-4">
+
+      <div *ngFor="let project of projects" class="col-md-4">
         <div class="card box-shadow">
-          <img class="card-img-top" [src]="'assets/img/portfolio-1.jpg'" alt="Ordinateur portable">
+          <img class="card-img-top" src={{project.image}} alt={{project.title}}>
           <div class="card-body">
-            <h3 class="card-subtitle">Title</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nesciunt? Animi mollitia deleniti aut id consectetur?</p>
-            <span class="text-muted">Categories</span>
+            <h3 class="card-subtitle">{{project.title}}</h3>
+            <p class="card-text">{{project.description}}</p>
+            <span class="text-muted">{{project.categories}}</span>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn group">
-                <button type="button" class="btn btn-sm">Voir</button>
-                <button type="button" class="btn btn-sm">Modifier</button>
-                <small class="text-muted">9 mins</small>
+                <a routerLink="/detail/{{project.id}}" class="btn btn-sm">Modifier</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card box-shadow">
-          <img class="card-img-top" [src]="'assets/img/portfolio-2.jpg'" alt="Nuancier de couleurs">
-          <div class="card-body">
-            <h3 class="card-subtitle">Title</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi fugit incidunt obcaecati ipsam expedita necessitatibus assumenda?</p>
-            <span class="text-muted">Categories</span>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn group">
-                <button type="button" class="btn btn-sm">Voir</button>
-                <button type="button" class="btn btn-sm">Modifier</button>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card box-shadow">
-          <img class="card-img-top" [src]="'assets/img/portfolio-3.jpg'" alt="Croquis de wireframe">
-          <div class="card-body">
-            <h3 class="card-subtitle">Title</h3>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis aut distinctio dolorum dolor sit amet distinctio.</p>
-            <span class="text-muted">Categories</span>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn group">
-                <button type="button" class="btn btn-sm">Voir</button>
-                <button type="button" class="btn btn-sm">Modifier</button>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>

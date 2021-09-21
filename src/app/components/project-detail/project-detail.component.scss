@@ -1,0 +1,48 @@
+.project-detail {
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem 1rem 4rem;
+  margin: 0 auto;
+}
+
+.text-detail {
+  padding-top: 3rem;
+}
+
+.project-id {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.btn-black{
+  border-color: #272727;
+  color: #272727;
+  margin: 1rem 1rem 0 0;
+  &:hover {
+    border-color: transparent;
+    background-color: #272727;
+    color: #fff;
+  }
+}
+
+.form-edit .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+textarea,
+input {
+  caret-color: #d73434;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  box-shadow: none;
+  border-color: #d73434;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(215, 52, 52, 0.6);
+}

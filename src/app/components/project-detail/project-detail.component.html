@@ -1,0 +1,30 @@
+<div *ngIf="project" class="project-detail">
+  <div class="text-detail">
+    <h2 class="text-center">{{project.title | uppercase}} détails</h2>
+    <p class=" text-center lead">Modifier le projet existant</p>
+  </div>
+
+  <div class="form-edit">
+    <div class="project-id"><span>ID </span>{{project.id}}</div>
+    <div class="form-group">
+      <label for="project-title">Titre : </label>
+      <input id="project-title" class="form-control" type="text" [(ngModel)]="project.title" />
+    </div>
+    <div class="form-group">
+      <label for="project-description">Description : </label>
+      <textarea id="project-description" class="form-control" type="text" rows="3" [(ngModel)]="project.description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="project-image">Image : </label>
+      <input id="project-image" class="form-control" type="text" [(ngModel)]="project.image" />
+    </div>
+    <div class="form-group">
+      <label for="project-categories">Catégories : </label>
+      <input id="project-categories" class="form-control" type="text" [(ngModel)]="project.categories" />
+    </div>
+    <button class="btn btn-black" (click)="goBack()"><fa-icon [icon]="faAngleDoubleLeft"></fa-icon>Précédent</button>
+    <button class="btn btn-red" (click)="save()">Sauvegarder</button>
+  </div>
+</div>
+
+<app-footer></app-footer>

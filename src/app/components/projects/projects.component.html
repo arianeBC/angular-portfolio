@@ -1,0 +1,56 @@
+<div class="project-add">
+  <h2 class="text-center">Ajouter un projet</h2>
+  <p class=" text-center lead">Il sera automatiquement ajouté dans le portfolio</p>
+</div>
+<form class="form-add">
+  <div class="form-group">
+    <label for="new-project-title">Titre: </label>
+    <input id="new-project-title" class="form-control" name="title" type="text" required #projectTitle/>
+  </div>
+  <div class="form-group">
+    <label for="new-project-description">Description: </label>
+    <textarea id="new-project-description" class="form-control" type="text" rows="3" required #projectDesc ></textarea>
+  </div>
+  <div class="form-group">
+    <label for="new-project-image">Image: </label>
+    <input id="new-project-image" class="form-control" type="text" value="assets/img/portfolio-test.jpg" required #projectImage />
+  </div>
+  <div class="form-group">
+    <label for="new-project-categories">Catégories: </label>
+    <input id="new-project-categories" class="form-control" type="text" required #projectCategories />
+  </div>
+  <div class="form-group">
+    <p *ngIf="!validated" class="alert alert-danger">Tous les champs doivent être remplis</p>
+  </div>
+  <button class="add-button btn btn-red" (click)="add(projectTitle.value, projectDesc.value, projectImage.value, projectCategories.value); projectTitle.value=''; projectDesc.value=''; projectCategories.value=''">
+    Ajouter
+  </button>
+</form>
+
+<section *ngIf="projects.length > 0" class="project-preview" >
+  <div class="text-preview">
+    <h3 class="text-center">Liste de projets</h3>
+    <p class=" text-center lead">Aperçu des projets en ligne</p>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Description</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="projects">
+      <tr *ngFor="let project of projects">
+        <th scope="row"><a routerLink="/detail/{{project.id}}"><span class="badge">{{project.id}}</span></a></th>
+        <td><a routerLink="/detail/{{project.id}}">{{project.title}}</a></td>
+        <td><a routerLink="/detail/{{project.id}}">{{project.description}}</a></td>
+        <td><button class="delete btn btn-red" title="delete project"
+        (click)="delete(project)">x</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<app-footer></app-footer>

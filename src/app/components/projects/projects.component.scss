@@ -1,0 +1,62 @@
+.form-add,
+.project-preview {
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem 1rem 4rem;
+  margin: 0 auto;
+}
+
+.project-add {
+  padding-top: 3rem;
+}
+
+.form-add .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+textarea,
+input {
+  caret-color: #d73434;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  box-shadow: none;
+  border-color: #d73434;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(215, 52, 52, 0.6);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+span.badge {
+  color: black;
+  font-size: 1rem;
+}
+
+td {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+td .btn-red {
+  margin: 0;
+}
+
+a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.text-preview {
+  padding: 1rem 0;
+}
