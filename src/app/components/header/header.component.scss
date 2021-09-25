@@ -21,3 +21,26 @@ a.nav-link {
   color: #D73434;
   }
 }
+
+a.nav-link.nav-login {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgba($color: #cac8c8, $alpha: .5);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  &:hover {
+    background-color: rgba($color: #cac8c8, $alpha: 1.0);
+  }
+}
+
+.active {
+  border-bottom: 1px solid rgba($color: #272727, $alpha: .5);
+  &:hover {
+    border-color: #D73434;
+  }
+}
+
+.active2 {
+  border-radius: 6px;
+  background-color: rgba($color: #cac8c8, $alpha: 1.0);
+}

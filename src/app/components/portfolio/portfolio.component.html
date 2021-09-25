@@ -13,14 +13,14 @@
 
       <div *ngFor="let project of projects" class="col-md-4">
         <div class="card box-shadow">
-          <img class="card-img-top" src={{project.image}} alt={{project.title}}>
+          <img class="card-img-top" src={{project.image}} alt={{project.title}} />
           <div class="card-body">
-            <h3 class="card-subtitle">{{project.title}}</h3>
-            <p class="card-text">{{project.description}}</p>
-            <span class="text-muted">{{project.categories}}</span>
+            <h3 class="card-subtitle">{{ project.title }}</h3>
+            <p class="card-text">{{ project.description }}</p>
+            <span class="text-muted">{{ project.categories }}</span>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn group">
-                <a routerLink="/detail/{{project.id}}" class="btn btn-sm">Modifier</a>
+                <a *ngIf="isAuthenticated" routerLink="/detail/{{ project.id }}" class="btn btn-sm">Modifier</a>
               </div>
             </div>
           </div>

@@ -22,7 +22,14 @@
   <div class="form-group">
     <p *ngIf="!validated" class="alert alert-danger">Tous les champs doivent être remplis</p>
   </div>
-  <button class="add-button btn btn-red" (click)="add(projectTitle.value, projectDesc.value, projectImage.value, projectCategories.value); projectTitle.value=''; projectDesc.value=''; projectCategories.value=''">
+  <button class="add-button btn btn-red" (click)="add(
+    projectTitle.value, 
+    projectDesc.value, 
+    projectImage.value, 
+    projectCategories.value); 
+    projectTitle.value=''; 
+    projectDesc.value=''; 
+    projectCategories.value=''">
     Ajouter
   </button>
 </form>
@@ -43,9 +50,9 @@
     </thead>
     <tbody class="projects">
       <tr *ngFor="let project of projects">
-        <th scope="row"><a routerLink="/detail/{{project.id}}"><span class="badge">{{project.id}}</span></a></th>
-        <td><a routerLink="/detail/{{project.id}}">{{project.title}}</a></td>
-        <td><a routerLink="/detail/{{project.id}}">{{project.description}}</a></td>
+        <th scope="row"><a routerLink="/detail/{{ project.id }}"><span class="badge">{{ project.id }}</span></a></th>
+        <td><a routerLink="/detail/{{ project.id }}">{{project.title}}</a></td>
+        <td><a routerLink="/detail/{{ project.id }}">{{project.description}}</a></td>
         <td><button class="delete btn btn-red" title="delete project"
         (click)="delete(project)">x</button></td>
       </tr>

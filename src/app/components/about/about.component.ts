@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,9 +10,14 @@ import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 export class AboutComponent implements OnInit {
   faAngleDoubleLeft = faAngleDoubleLeft;
 
-  constructor() { }
+  constructor(
+    private location: Location) { }
 
   ngOnInit(): void {
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }

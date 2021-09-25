@@ -8,13 +8,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
-import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -26,7 +28,9 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     PortfolioComponent,
     ProjectDetailComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    MessagesComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
