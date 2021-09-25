@@ -1,0 +1,49 @@
+.login {
+  padding-top: 3rem;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem 1rem 4rem;
+  margin: 0 auto;
+}
+
+.form-login .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input {
+  caret-color: #d73434;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #d73434;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(215, 52, 52, 0.6);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(215, 52, 52, 0.6);
+}
+
+.btn-black {
+  border-color: #272727;
+  color: #272727;
+  margin: 1rem 1rem 0;
+}
+
+.btn-black:hover {
+  border-color: transparent;
+  background-color: #272727;
+  color: #fff;
+}
+
+fa-icon {
+  padding-left: .3rem;
+}

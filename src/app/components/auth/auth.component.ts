@@ -10,7 +10,7 @@ import { faToilet } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent implements OnInit {
+export class AuthComponent {
   faToilet = faToilet;
   isClose = false;
   isLoginMode = true;
@@ -18,11 +18,8 @@ export class AuthComponent implements OnInit {
   error: string = "";
 
   constructor(
-    private authService: AuthService,
+    private authService: AuthService, 
     private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
   onSwitchMode() {
     this.isLoginMode = !this.isLoginMode;

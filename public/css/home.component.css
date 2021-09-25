@@ -1,0 +1,12 @@
+.cover {
+  height: 93.8vh;
+  width: auto;
+  background-size: cover;
+}
+
+.home {
+  width: 100%;
+  max-width: 900px;
+  padding: 4rem;
+  margin: 0 auto;
+}

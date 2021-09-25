@@ -7,14 +7,10 @@ import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   faAngleDoubleLeft = faAngleDoubleLeft;
 
-  constructor(
-    private location: Location) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private location: Location) { }
 
   goBack(): void {
     this.location.back();
