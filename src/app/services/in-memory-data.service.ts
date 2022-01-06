@@ -33,8 +33,8 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
     const authentication = [
       {
-        email: "test@test.com",
-        password: "mdps!cret#30",
+        email: "admin@admin.com",
+        password: "0000",
         _token: ""
       }
     ];
