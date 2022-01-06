@@ -60,7 +60,7 @@ export class InMemoryDataService implements InMemoryDbService {
       console.log('HTTP POST api/authentication override')
       const { headers, url, req } = reqInfo;
       const { email, password }: any = reqInfo.utils.getJsonBody(reqInfo.req);
-      if (email === 'test@test.com' && password === 'mdps!cret#30') {
+      if (email === 'amdin@admin.com' && password === '000000') {
         return { 
           status: 200, 
           headers,
