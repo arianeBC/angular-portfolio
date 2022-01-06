@@ -33,8 +33,8 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
     const authentication = [
       {
-        email: "admin@admin.com",
-        password: "000000",
+        email: "test@test.com",
+        password: "mdps!cret#30",
         _token: ""
       }
     ];
@@ -60,7 +60,7 @@ export class InMemoryDataService implements InMemoryDbService {
       console.log('HTTP POST api/authentication override')
       const { headers, url, req } = reqInfo;
       const { email, password }: any = reqInfo.utils.getJsonBody(reqInfo.req);
-      if (email === 'amdin@admin.com' && password === '000000') {
+      if (email === 'test@test.com' && password === 'mdps!cret#30') {
         return { 
           status: 200, 
           headers,
